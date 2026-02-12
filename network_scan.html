@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Network Scan Report</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            max-width: 800px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 1px solid #ccc;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #666;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Network Port Scanning Report</h1>
+
+<h2>Aim</h2>
+<p>
+To scan the local network and identify active devices and open ports using Nmap.
+</p>
+
+<h2>Tool Used</h2>
+<p>Nmap (Network Mapper)</p>
+
+<h2>System Information</h2>
+<p>
+<b>IP Address:</b> 10.107.170.90 <br>
+<b>Network Range:</b> 10.107.170.0/24
+</p>
+
+<h2>Procedure</h2>
+<p>
+1. Open Command Prompt.<br>
+2. Find IP address using <b>ipconfig</b>.<br>
+3. Scan devices using <b>nmap -sn 10.107.170.0/24</b>.<br>
+4. Scan ports using <b>nmap 10.107.170.90</b>.
+</p>
+
+<h2>Commands Used</h2>
+
+<pre>
+ipconfig
+
+nmap -sn 10.107.170.0/24
+
+nmap 10.107.170.90
+</pre>
+
+<h2>Open Ports Detected</h2>
+
+<table>
+<tr>
+    <th>Port</th>
+    <th>State</th>
+    <th>Service</th>
+</tr>
+
+<tr>
+    <td>135</td>
+    <td>Open</td>
+    <td>MSRPC</td>
+</tr>
+
+<tr>
+    <td>139</td>
+    <td>Open</td>
+    <td>NetBIOS-SSN</td>
+</tr>
+
+<tr>
+    <td>445</td>
+    <td>Open</td>
+    <td>Microsoft-DS</td>
+</tr>
+
+</table>
+
+<h2>Result</h2>
+<p>
+The network was successfully scanned and open ports were detected.
+</p>
+
+<h2>Conclusion</h2>
+<p>
+Nmap helps in identifying active hosts and open ports to improve security.
+</p>
+
+<br>
+
+<p><b>Submitted By:</b> RITESH KUMAR</p>
+<p><b>Date:</b> 12 FEB 2026</p>
+
+</div>
+
+</body>
+</html>
